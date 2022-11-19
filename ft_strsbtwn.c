@@ -6,7 +6,7 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 20:57:46 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/11/19 22:38:56 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/11/19 22:39:32 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,17 +101,4 @@ char	**ft_strsbtwn(const char *str, char open, char close)
 	}
 	substrs[i] = NULL;
 	return (substrs);
-}
-
-int	main(void)
-{
-	char	**strs;
-
-	strs = ft_strsbtwn("axacayacazaac", 'a', 'c');
-	for (int i = 0; strs[i] != NULL; i++)
-	{
-		printf("string[%d]: %s\n", i, strs[i]);
-		free (strs[i]);
-	}
-	free (strs);
 }
