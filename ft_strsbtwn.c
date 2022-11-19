@@ -6,7 +6,7 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 20:57:46 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/11/19 22:37:08 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/11/19 22:38:56 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,8 @@ char	**ft_strsbtwn(const char *str, char open, char close)
 	j = 0;
 	len = count_strs_between(str, open, close);
 	substrs = (char **)malloc((len + 1) * sizeof(char *));
+	if (substrs == NULL)
+		return (NULL);
 	while (str[j] != '\0')
 	{
 		if (str[j] == open)
