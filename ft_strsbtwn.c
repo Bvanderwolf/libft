@@ -6,22 +6,22 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 20:57:46 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/11/19 22:39:32 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/11/20 09:39:05 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-// test args: ("axcaycazc", 'a', 'c') -> ["x","y","z"]
-// test args: ("axcaycaz", 'a', 'c') -> ["x", "y"]
-// test args: ("xcaycazc", 'a', 'c') -> ["y", "z"]
-// test args: ("axcaycazc", 'a', 'p') -> []
-// test args: ("axcaycazc", 'p', 'c') -> []
-// test args: ("axcaycazc", 'g', 'p') -> []
-// test args: ("axacayacazaac", 'a', 'c') -> ["xa", "ya", "zaa", "a"]
-// test args: ("ac", 'a', 'c') -> []
-// test args: (NULL, 'g', 'p') -> Segfault
+// test cases: ("axcaycazc", 'a', 'c')		-> ["x","y","z"] (happy)
+// test cases: ("axcaycaz", 'a', 'c')		-> ["x", "y"] (happy)
+// test cases: ("xcaycazc", 'a', 'c')		-> ["y", "z"] (happy)
+// test cases: ("axcaycazc", 'a', 'p')		-> [] (unhappy)
+// test cases: ("axcaycazc", 'p', 'c') 		-> [] (unhappy)
+// test cases: ("axcaycazc", 'g', 'p') 		-> [] (unhappy)
+// test cases: ("axacayacazaac", 'a', 'c')	-> ["xa", "ya", "zaa", "a"] (happy)
+// test cases: ("ac", 'a', 'c') 			-> [] (unhappy)
+// test cases: (NULL, 'g', 'p') 			-> Segfault (angry)
 
 static int	count_strs_between(const char *str, char open, char close)
 {
