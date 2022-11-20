@@ -6,12 +6,11 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 20:57:46 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/11/20 10:18:01 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/11/20 10:22:07 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 // test cases: ("axcaycazc", 'a', 'c')		-> ["x","y","z"] (happy)
 // test cases: ("axcaycaz", 'a', 'c')		-> ["x", "y"] (happy)
