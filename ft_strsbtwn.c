@@ -6,7 +6,7 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 20:57:46 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/11/20 09:39:05 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/11/20 10:18:01 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,9 @@
 // test cases: ("axcaycazc", 'g', 'p') 		-> [] (unhappy)
 // test cases: ("axacayacazaac", 'a', 'c')	-> ["xa", "ya", "zaa", "a"] (happy)
 // test cases: ("ac", 'a', 'c') 			-> [] (unhappy)
+// test cases: ("a", 'a', 'c') 				-> [] (unhappy)
+// test cases: ("c", 'a', 'c') 				-> [] (unhappy)
+// test cases: ("", 'a', 'c')				-> [] (unhappy)
 // test cases: (NULL, 'g', 'p') 			-> Segfault (angry)
 
 static int	count_strs_between(const char *str, char open, char close)
