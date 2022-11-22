@@ -6,24 +6,24 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 20:57:46 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/11/20 10:22:07 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/11/22 20:26:46 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// test cases: ("axcaycazc", 'a', 'c')		-> ["x","y","z"] (happy)
-// test cases: ("axcaycaz", 'a', 'c')		-> ["x", "y"] (happy)
-// test cases: ("xcaycazc", 'a', 'c')		-> ["y", "z"] (happy)
-// test cases: ("axcaycazc", 'a', 'p')		-> [] (unhappy)
-// test cases: ("axcaycazc", 'p', 'c') 		-> [] (unhappy)
-// test cases: ("axcaycazc", 'g', 'p') 		-> [] (unhappy)
-// test cases: ("axacayacazaac", 'a', 'c')	-> ["xa", "ya", "zaa", "a"] (happy)
-// test cases: ("ac", 'a', 'c') 			-> [] (unhappy)
-// test cases: ("a", 'a', 'c') 				-> [] (unhappy)
-// test cases: ("c", 'a', 'c') 				-> [] (unhappy)
-// test cases: ("", 'a', 'c')				-> [] (unhappy)
-// test cases: (NULL, 'g', 'p') 			-> Segfault (angry)
+// test case: ("axcaycazc", 'a', 'c')		-> ["x","y","z"] (happy)
+// test case: ("axcaycaz", 'a', 'c')		-> ["x", "y"] (happy)
+// test case: ("xcaycazc", 'a', 'c')		-> ["y", "z"] (happy)
+// test case: ("axcaycazc", 'a', 'p')		-> [] (unhappy)
+// test case: ("axcaycazc", 'p', 'c') 		-> [] (unhappy)
+// test case: ("axcaycazc", 'g', 'p') 		-> [] (unhappy)
+// test case: ("axacayacazaac", 'a', 'c')	-> ["xa", "ya", "zaa", "a"] (happy)
+// test case: ("ac", 'a', 'c') 				-> [] (unhappy)
+// test case: ("a", 'a', 'c') 				-> [] (unhappy)
+// test case: ("c", 'a', 'c') 				-> [] (unhappy)
+// test case: ("", 'a', 'c')				-> [] (unhappy)
+// test case: (NULL, 'g', 'p') 			-> Segfault (angry)
 
 static int	count_strs_between(const char *str, char open, char close)
 {
@@ -82,7 +82,6 @@ char	**ft_strsbtwn(const char *str, char open, char close)
 	int		len;
 	int		i;
 	int		j;
-	int		k;
 
 	i = 0;
 	j = 0;
