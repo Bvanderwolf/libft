@@ -6,7 +6,7 @@
 /*   By: bvan-der <bvan-der@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 14:08:37 by bvan-der          #+#    #+#             */
-/*   Updated: 2022/10/24 15:47:27 by bvan-der         ###   ########.fr       */
+/*   Updated: 2022/12/28 15:27:03 by bvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strtlen(const char *s, char t)
 	if (s == NULL)
 		return (0UL);
 	i = 0;
-	while (s[i] != t)
+	while (s[i] != t && s[i] != '\0')
 		i++;
 	return (i);
 }
